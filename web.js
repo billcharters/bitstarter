@@ -4,7 +4,6 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   filecontent = fs.readFileSync(index.html)
-  
   response.send(filecontents);
 });
 
